@@ -1,0 +1,198 @@
+/* =========================
+   Base
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 18px;
+    min-width: 400px;
+
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+
+/* =========================
+   Input
+========================= */
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+
+    font-size: 14px;
+    color: #1e293b;
+
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+
+    margin-bottom: 10px;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+input:hover {
+    border-color: #94a3b8;
+}
+
+input:focus {
+    border-color: #5f9341;
+
+    box-shadow:
+        0 0 0 3px rgba(95, 147, 65, 0.15);
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+button {
+    padding: 10px 18px;
+
+    background: linear-gradient(
+        135deg,
+        #5f9341,
+        #4d7d35
+    );
+
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        filter 0.15s ease;
+}
+
+button:hover {
+    filter: brightness(1.08);
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.16);
+}
+
+button:active {
+    transform: translateY(0);
+
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   Lead List
+========================= */
+
+ul {
+    margin-top: 20px;
+    padding-left: 0;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+/* =========================
+   Lead Item
+========================= */
+
+li {
+    margin: 0;
+    padding: 10px 12px;
+
+    background: white;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 7px;
+
+    box-shadow:
+        0 1px 3px rgba(15, 23, 42, 0.05);
+
+    transition:
+        transform 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+li:hover {
+    transform: translateX(2px);
+
+    border-color: #cbd5e1;
+
+    box-shadow:
+        0 4px 10px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================
+   Links
+========================= */
+
+a {
+    color: #4d7d35;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: color 0.15s ease;
+}
+
+a:hover {
+    color: #365c26;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Scrollbar
+========================= */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
